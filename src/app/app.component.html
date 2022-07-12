@@ -1,0 +1,29 @@
+<p>Technology And Books.. <code> </code></p>
+
+<nav ngbNav #nav="ngbNav" class="nav-tabs">
+  <ng-container ngbNavItem>
+    <a ngbNavLink>One</a>
+    <ng-template ngbNavContent>
+      <h4>Angular</h4>
+      <h4>Node JS</h4>
+      <h4>Android</h4>
+      <h4>Big data</h4>
+      <h4>Artificial</h4>
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Two</a>
+    <ng-template ngbNavContent>
+      
+        <h4>Books of Angular</h4>
+        <h4>Book of nodeJS</h4>
+        <h4>Books of Big data</h4>
+
+
+      
+    </ng-template>
+  </ng-container>
+</nav>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+<router-outlet></router-outlet>
